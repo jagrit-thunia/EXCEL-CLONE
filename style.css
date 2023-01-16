@@ -1,0 +1,166 @@
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-size: 14;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.contianer {
+    height : 100vh;
+    border : 2px solid red;
+}
+
+.title-bar {
+    height : 5vh;
+    background-color: #096d43;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.menu-bar {
+    height : 5vh;
+    background-color: #096d43;
+    display: flex;
+}
+
+.menu-item {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+    font-size: 18;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item.selected {
+    background-color: #fff;
+    color: #096d43;
+}
+
+.menu-item:hover {
+    background-color: #054830;
+    cursor: pointer;
+}
+
+.menu-item.selected:hover {
+    background-color: #fff;
+    cursor: default;
+}
+
+.menu-icon-bar {
+    height : 6vh;
+    background-color: rgb(236, 230, 230);
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon:hover {
+    background-color: lightgray;
+    cursor: pointer;
+
+}
+
+.font-family-selector {
+     width: 150px;
+}
+
+.selector {
+    height: 30px;
+    font-size: 18px;
+}
+
+.selector option {
+    font-size: 18px;
+}
+
+.formula-bar {
+    height : 5vh;
+}
+
+.data-container {
+    height : 75vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.select-all {
+    width : 30px;
+    height: 30px;
+    border: 1px solid lightgray;
+}
+
+.column-name-container {
+    width: calc(100vw - 30px);
+    height: 30px;
+    border: 1px solid lightgray;
+}
+
+.row-name-container {
+    width: 30px;
+    height: calc(75vh - 30px);
+    border: 1px solid lightgray;
+}
+
+.input-cell-container {
+    width: calc(100vw - 30px);
+    height: calc(75vh-30px);
+    border: 1px solid lightgray;
+}
+.sheet-bar {
+    height : 4vh;
+    display: flex;
+    align-items: center;
+}
+
+.scroller {
+    width: 70px;
+}
+
+.icon-left-scrool:hover, .icon-right-scroll:hover {
+    background-color: lightgray;
+    cursor : pointer;
+}
+
+.icon-add {
+    color: #107c41;
+    width: 40px;
+}
+
+.icon-add:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.sheet-tab-container {
+    border: 1px solid lightgray;
+    width: calc(100vw - 110px);
+}
+
+.sheet-tab {
+    border-bottom: 4px solid #107c41;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    width: 80px;
+    align-items: 600;
+    border-right: 1px solid lightgray;
+}
+
+.sheet-tab:hover {
+    cursor: default;
+}
